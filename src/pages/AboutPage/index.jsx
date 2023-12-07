@@ -9,7 +9,7 @@ const AboutPage = ({theme}) => {
 			<Title title={"About Me"} span={"About Me"} />
 			<ImageSection theme={theme} />
 			<ServicesSection />
-			<ReviewsSection/>
+			{/* <ReviewsSection/> */}
 		</div>
 	)
 }

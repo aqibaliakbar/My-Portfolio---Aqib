@@ -1,7 +1,7 @@
 import Sidebar from "./components/Sidebar";
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import ResumePage from "./pages/ResumePage";
 import PortfoliosPage from "./pages/PortfoliosPage";
@@ -14,25 +14,40 @@ import { useEffect, useState } from "react";
 import PortfolioDetails from "./components/PortfolioDetails";
 import BlogDetails from "./components/BlogDetails";
 
-
 function App() {
-    const [theme, setTheme] = useState("dark-theme");
-    const [checked, setChecked] = useState(false);
-    const [navToggle, setNavToggle] = useState(false);
+  const [theme, setTheme] = useState("dark-theme");
+  const [checked, setChecked] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
 
-    useEffect(() => {
-      document.documentElement.className = theme;
-    }, [theme]);
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
 
-    const themeToggler = () => {
-      if (theme === "light-theme") {
-        setTheme("dark-theme");
-        setChecked(false);
-      } else {
-        setTheme("light-theme");
-        setChecked(true);
-      }
+  useEffect(() => {
+    const handleClickOutside = () => {
+      setNavToggle(false);
     };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [theme, navToggle]);
+
+  const closeSidebar = () => {
+    setNavToggle(!navToggle);
+  };
+
+  const themeToggler = () => {
+    if (theme === "light-theme") {
+      setTheme("dark-theme");
+      setChecked(false);
+    } else {
+      setTheme("light-theme");
+      setChecked(true);
+    }
+  };
   return (
     <>
       <Sidebar navToggle={navToggle} theme={theme} />
@@ -55,7 +70,7 @@ function App() {
       </div>
 
       <div className="ham-burger-menu">
-        <IconButton onClick={() => setNavToggle(!navToggle)}>
+        <IconButton onClick={closeSidebar}>
           <MenuIcon />
         </IconButton>
       </div>

@@ -31,7 +31,7 @@ const ServicesSection = () => {
           image={Web}
           title={"Web Development"}
           paragraph={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+            "We specialize in crafting dynamic web solutions using the MERN stack, with proficiency in design tools such as Canva and Figma. Our toolkit extends to Material-UI, Tailwind CSS, and Bootstrap, allowing us to create sleek and responsive websites that seamlessly blend functionality with an aesthetic touch."
           }
         />
         <div className="mid-card">
@@ -39,7 +39,7 @@ const ServicesSection = () => {
             image={Front}
             title={"Frontend Development"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+              "As a frontend developer with expertise in crafting engaging and interactive web experiences. Proficient in JavaScript, React.js, and Redux.js, We bring innovation and precision to frontend development, ensuring seamless user interfaces and exceptional user journeys."
             }
           />
         </div>
@@ -47,7 +47,7 @@ const ServicesSection = () => {
           image={Back}
           title={"Backend Development"}
           paragraph={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+            "As a backend maestro, We leverage the power of Node.js, Express.js, and MongoDB to architect resilient and scalable server-side solutions. With expertise in crafting efficient APIs and managing data with MongoDB, We specialize in building the backbone of dynamic and high-performance web applications."
           }
         />
       </div>

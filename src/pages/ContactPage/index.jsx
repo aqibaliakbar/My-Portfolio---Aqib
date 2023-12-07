@@ -8,6 +8,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Alert, Snackbar } from "@mui/material";
 
 const ContactPage = () => {
   const [error, setError] = useState(false);
@@ -30,13 +31,29 @@ const ContactPage = () => {
         "mmMAKWRNfYP3btg9t"
       )
       .then(
-        (result) => {
+        () => {
           setSuccess(true);
+          setOpen(true);
+          setError(false);
+          // Reset form fields
+          formRef.current.reset();
         },
-        (error) => {
+        () => {
           setError(true);
+          setOpen(true);
+          setSuccess(false);
         }
       );
+  };
+
+  const [open, setOpen] = useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
   };
 
   return (
@@ -98,7 +115,40 @@ const ContactPage = () => {
               <PrimaryButton title={"Send Email"} />
             </div>
             {error && "Error"}
-            {success && "Success"}
+
+            {success && (
+              <Snackbar
+                open={open}
+                autoHideDuration={6000}
+                onClose={handleClose}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Alert
+                  onClose={handleClose}
+                  severity="success"
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    background: "var(--border-color)",
+                    color: "var(--primary-color)",
+                    "@media(max-width: 600px)": {
+                      width: "50%",
+                    },
+                    "& .MuiAlert-icon": {
+                      color: "var(--primary-color)",
+                    },
+                  }}
+                >
+                  Sent!
+                </Alert>
+              </Snackbar>
+            )}
           </motion.form>
         </div>
         <div className="right-content">

@@ -1,0 +1,111 @@
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+}
+
+.contact-section .f-button {
+  font-size: 22px;
+}
+
+.contact-section .form {
+  position: relative;
+}
+.contact-section .contactSvg{
+  stroke: var(--primary-color);
+  position: absolute;
+  top: none;
+z-index: -1;
+
+}
+
+
+@media screen and (max-width: 978px) {
+  .contact-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-section .f-button {
+    margin-bottom: 3rem;
+    font-size: 22px;
+  }
+
+  .contact-section .contactSvg svg{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 2rem 5rem 2rem 0rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+ .contact-section .contactSvg svg{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 2rem 1.5rem 2rem 0rem; }
+}
+
+.contact-section .right-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (max-width: 502px) {
+  .contact-section .right-content {
+    width: 70%;
+  }
+}
+
+.contact-title {
+  background-color: var(--primary-color);
+}
+.contact-title h4 {
+  color: var(--sidebar-dark-color);
+  padding: 1rem 0;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.contact-section .form {
+  width: 100%;
+}
+
+@media screen and (max-width: 502px) {
+  .contact-section .form {
+    width: 100%;
+  }
+}
+
+.contact-section .form .form-field {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.contact-section .form .form-field label {
+  position: absolute;
+  left: 20px;
+  top: -19px;
+  display: inline-block;
+  background-color: var(--background-dark-color);
+  padding: 0 0.5rem;
+  color: inherit;
+  font-size: 18px;
+}
+
+.contact-section .form .form-field input {
+  border: 1px solid var(--border-color);
+  outline: none;
+  background: transparent;
+  height: 65px;
+  padding: 0 15px;
+  width: 100%;
+  color: inherit;
+}
+
+.contact-section .form .form-field textarea {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  outline: none;
+  color: inherit;
+  width: 100%;
+  padding: 0.8rem 1rem;
+}

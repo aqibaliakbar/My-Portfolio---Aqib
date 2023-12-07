@@ -1,0 +1,17 @@
+.small-title-section {
+  display: flex;
+  align-items: center;
+}
+
+.small-title-section p {
+  padding-right: 1rem;
+}
+
+ .small-title-section p svg {
+  font-size: 3rem;
+}
+
+.small-title-section h3 {
+  color: var(--white-color);
+  font-size: 2rem;
+}

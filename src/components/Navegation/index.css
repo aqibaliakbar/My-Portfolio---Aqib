@@ -1,0 +1,120 @@
+.navegation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid var(--border-color);
+}
+
+.navegation .header{
+  border-bottom: 1px solid var(--border-color);
+}
+.navegation .header-avatar {
+  width: 100%;
+ 
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.navegation .header-avatar img {
+  width: 70%;
+  border-radius: 50%;
+  border: 8px solid var(--border-color);
+}
+
+.navegation .header-info{
+ display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--border-color);
+}
+
+.navegation .header-info h4{
+ text-align: center;
+   background-color: var(--border-color);
+  padding: 0.8rem 2.5rem;
+  color: var(--white-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+  border-left: 0;
+  border-right: 0;
+}
+
+
+
+
+
+
+.navegation .nav-items {
+  width: 100%;
+  text-align: center;
+}
+
+.navegation .active {
+  background-color: var(--primary-color);
+  color: var(--primary-dark-color);
+}
+
+.navegation li {
+  display: block;
+}
+
+.navegation li a {
+  display: block;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  font-weight: 400;
+  letter-spacing: 1px;
+  
+}
+
+.navegation li a:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+}
+
+.navegation li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 50%;
+  background-color: var(--primary-dark-color);
+  transition: All 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
+  /* opacity: 0.21; */
+  z-index: -1;
+}
+
+.navegation li a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.navegation footer {
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+}
+ .navegation footer p {
+    padding: 1.3rem 0;
+    font-size: 1.1rem;
+    display: block;
+    text-align: center; }
+
+   .navegation footer p b {
+      color: var(--white-color);
+      font-weight: 500;
+    }
+  
+

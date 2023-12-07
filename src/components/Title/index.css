@@ -1,0 +1,70 @@
+.title {
+  position: relative;
+}
+
+.global-title {
+  color: var(--white-color);
+  font-size: 3.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.7rem;
+}
+@media screen and (max-width: 496px) {
+  .global-title {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .global-title {
+    font-size: 2rem;
+  }
+}
+
+ .global-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 7.4rem;
+  height: 0.33rem;
+  background-color: var(--border-color);
+  border-radius: 15px;
+  left: 0;
+}
+
+.global-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 3.5rem;
+  height: 0.33rem;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  left: 0;
+}
+
+ .global-span {
+  font-weight: 900;
+  color: rgba(76, 97, 122, 0.1);
+  font-size: 5rem;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  z-index: -1;
+}
+@media screen and (max-width: 620px) {
+ .global-span{
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 496px) {
+ .global-span{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  span {
+    font-size: 2rem;
+  }
+}

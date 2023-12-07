@@ -1,0 +1,38 @@
+.contact-item {
+  padding: 1.5rem 3rem;
+  background-color: var(--sidebar-dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--white-color);
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+.contact-item .left-content {
+  padding: 1rem;
+ border: 1px solid var(--border-color);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  height: 80px;
+  width: 80px;
+}
+.contact-item .left-content svg {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.contact-item .right-content h6 {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  padding-bottom: 0.6rem;
+    
+}
+
+.contact-item .right-content p {
+  padding: 0.1rem 0;
+}

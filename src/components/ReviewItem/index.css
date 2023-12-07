@@ -1,0 +1,30 @@
+.review-item {
+  padding: 2rem 1rem;
+  border-left: 8px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color);
+  background-color: var(--background-dark-color);
+  position: relative;
+  width: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.review-item::after {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  border-width: 0.8rem;
+  top: 100%;
+  border-style: solid;
+  border-color: var(--border-color) transparent transparent
+    var(--primary-color);
+}
+p {
+  padding: 1rem 0;
+}
+
+.review-item:hover{
+	border-left: 8px solid var(--primary-color);
+	 transform: translateX(-3px);
+}

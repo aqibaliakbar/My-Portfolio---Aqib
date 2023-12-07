@@ -1,0 +1,123 @@
+.portfolio-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .portfolio-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .portfolio-menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.portfolio-grid-item {
+  background-color: var(--sidebar-dark-color);
+  border: 1px solid var(--border-color);
+}
+
+.portfolio-grid-item .portfolio-content {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.portfolio-grid-item .link-title  {
+ display: flex;
+ justify-content: start;
+}
+
+.portfolio-grid-item  h6 {
+  font-size: 1.5rem;
+}
+
+.portfolio-grid-item img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.portfolio-grid-item ul {
+  transform: translateY(-600px);
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  opacity: 0;
+}
+
+.portfolio-grid-item li {
+  background-color: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio-grid-item li:hover {
+  background-color: var(--sidebar-dark-color);
+}
+
+.portfolio-grid-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio-grid-item .portfolio-image::before {
+  content: "";
+  position: absolute;
+  left: 2%;
+  top: 0.8%;
+  height: 0;
+  width: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio-grid-item .portfolio-image:hover::before {
+  height: calc(100% - 35%);
+  width: calc(100% - 4%);
+  background-color: var(--sidebar-dark-color);
+  opacity: 0.6;
+  transform-origin: left;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.portfolio-grid-item .portfolio-image:hover ul {
+ transform: translate(-50%, -50%) translateY(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.portfolio-grid-item .portfolio-image:hover li {
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio-grid-item .portfolio-image:hover li:hover {
+  background-color: var(--sidebar-dark-color);
+}
+
+.portfolio-grid-item .portfolio-image:hover li:hover svg {
+  color: var(--primary-color);
+}
+
+.portfolio-grid-item .portfolio-image:hover svg {
+  font-size: 2rem;
+}
+

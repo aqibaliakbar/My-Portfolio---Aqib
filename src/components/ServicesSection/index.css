@@ -1,0 +1,26 @@
+.services {
+  padding: 5rem 0;
+}
+
+.service-categories {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .service-categories {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 950px) {
+  .service-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .service-categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

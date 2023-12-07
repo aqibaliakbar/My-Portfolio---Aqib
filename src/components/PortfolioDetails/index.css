@@ -1,0 +1,89 @@
+.portfolio-details .portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-details .portfolio-img img {
+  height: 650px;
+  width: auto;
+  border: 1px solid var(--border-color);
+  background-color: var(--siderbar-dark-color);
+  padding: 1rem;
+}
+
+.portfolio-details-des p{
+  font-weight: 400 !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .portfolio-details .portfolio-img img {
+    height: auto;
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .portfolio-details .portfolio-img img {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .portfolio-details .portfolio-img img {
+    height: 30vh;
+  }
+}
+
+.portfolio-details .tech-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.portfolio-details .tech-info h2 {
+  text-align: center;
+}
+
+.portfolio-details .tech-info ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.portfolio-details-des h2 {
+  color: var(--white-color);
+}
+
+.portfolio-details-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  gap: 10px;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.portfolio-details-links ul li a {
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  background-color: var(--siderbar-dark-color);
+}
+
+.portfolio-details-links ul li a:hover {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}

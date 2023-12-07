@@ -1,0 +1,41 @@
+
+
+.portfolio-category-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 2.4rem auto;
+}
+
+.portfolio-filtered-category{
+ outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    padding: .4rem 2rem;
+    font-size: inherit;
+    color: var(--sidebar-dark-color);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    margin-bottom: .6rem;
+}
+
+.portfolio-filtered-category:active,
+.portfolio-filtered-category:focus {
+    background-color: var(--border-color);
+		color: var(--white-color);
+}
+
+.portfolio-filtered-category:hover {
+    background-color: var(--border-color);
+		color: var(--white-color);
+}
+
+
+
+
+
+.portfolio-filtered-category:not(:last-child) {
+    margin-right: .6rem;
+}

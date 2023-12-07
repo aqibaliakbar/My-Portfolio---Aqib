@@ -35,9 +35,9 @@ function App() {
     };
   }, [theme, navToggle]);
 
-  const closeSidebar = () => {
-    setNavToggle(!navToggle);
-  };
+  // const closeSidebar = () => {
+  //   setNavToggle(!navToggle);
+  // };
 
   const themeToggler = () => {
     if (theme === "light-theme") {
@@ -70,7 +70,7 @@ function App() {
       </div>
 
       <div className="ham-burger-menu">
-        <IconButton onClick={closeSidebar}>
+        <IconButton onClick={()=>setNavToggle(!navToggle)}>
           <MenuIcon />
         </IconButton>
       </div>

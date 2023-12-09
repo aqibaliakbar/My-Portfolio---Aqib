@@ -2,6 +2,8 @@ import IMemory from "../assets/images/portfolios/Featured/I-Memory.png";
 import NewsUniverse from "../assets/images/portfolios/Featured/NewsUniverse.png";
 import TextSpace from "../assets/images/portfolios/Featured/Text-Space.png";
 import BlogCrud from "../assets/images/portfolios/Featured/Blog-Project.png";
+import UniversityWebsite from "../assets/images/portfolios/Web Development/UniWebsite.png";
+import WorkingContactForm from "../assets/images/portfolios/Html Forms/ContactForm-SMTP.png";
 
 
 const portfolios = [
@@ -88,6 +90,48 @@ const portfolios = [
     ],
     description:
       "<p>Welcome to my Portfolio Blog Project, where creativity meets functionality! This project is a showcase of my skills in web development, featuring a robust Content Management System (CMS) built with API integration, asynchronous programming, and the power of Redux.js.</p> <h2>Key Features:</h2> <p><b>CRUD Operations:</b> Create: Users can easily create new blog posts with a user-friendly interface. The system ensures a smooth and intuitive post creation process.Read: Explore a dynamic and responsive blog layout that fetches and displays posts seamlessly from a third-party fake API, providing a realistic data environment for users to engage with. Update: Edit and refine your blog posts effortlessly. The project incorporates a comprehensive update mechanism that allows authors to modify content, timestamps, and emojis as needed.Delete: Keep your blog organized by removing outdated or unnecessary posts with the secure and user-friendly delete functionality. </p> <p> <b>Async Operations:</b> Experience a seamless and responsive interface through the implementation of asynchronous programming. The blog project utilizes async techniques to enhance performance, ensuring a smooth user experience without unnecessary delays. </p> <p> <b>Redux.js Power:</b> Harnessing the power of Redux.js, this project manages state efficiently, providing a scalable and maintainable solution for handling the application's complex data flow. Redux ensures a single source of truth for the application state, simplifying debugging and development. </p> <p> <b>Timestamps and Emojis:</b> HEach blog post is enriched with timestamps, capturing the moment of creation or modification. Additionally, inject personality into your posts with a wide range of emojis, allowing authors to express themselves uniquely. </p> </br> <p> Whether you're a visitor exploring engaging content or an aspiring blogger, this Portfolio Blog Project showcases my commitment to creating dynamic and feature-rich web applications. Dive in, explore, and witness the synergy of API integration, asynchronous programming, and the organizational prowess of Redux.js in action!</p>",
+  },
+  {
+    id: 5,
+    category: {
+      name: "Html Forms",
+      featured: false,
+    },
+    image: WorkingContactForm,
+    git: "https://github.com/aqibaliakbar/Responsive-Working-Contact-Form-With-Dark-Mode-and-Custom-Modal-Using-Html-Css-Js",
+    live: "https://working-contact-form-1.netlify.app/",
+    title: "Dark Mode Contact Form with SMTP Server Integration ",
+    text: "Tech Stack: Html, CSS, JavaScript",
+    language: [
+      {
+        CSS: "44.7%",
+        HTML: "40.0%",
+        JavaScript: "15.3%",
+      },
+    ],
+    description:
+      "<p>Welcome to my latest project, a cutting-edge Dark Mode Contact Form designed to elevate user experience while ensuring seamless communication. This project represents my proficiency in web development, combining HTML, CSS, and JavaScript to create a visually appealing and functional form.</p><h3>Key Features:</h3>  <br/><ul><li><b>Dark Mode:</b> Experience a sleek and modern design with a dark mode theme, providing users with a stylish and comfortable interface, especially in low-light environments.</li><li><b>Contact Form:</b> The project includes a fully functional contact form that allows users to send messages seamlessly. The form is designed for a user-friendly experience, with validation for input fields to enhance data accuracy.</li><li><b>SMTP Server Integration:</b> To ensure reliable email delivery, the contact form is integrated with an SMTP server. This backend functionality enables users to receive email notifications promptly.</li><li><b>Responsive Design:</b> The form is built with a responsive design approach, ensuring optimal performance and usability across various devices and screen sizes.</li></ul> <br/><h3>Dark Mode Implementation:</h3><p>The dark mode not only enhances the aesthetic appeal of the contact form but also contributes to user comfort. It's implemented using a combination of CSS styles and JavaScript functionalities to enable users to switch between light and dark modes effortlessly.</p><h3>Technologies Used:</h3><p>This project leverages the following technologies:</p><ul><li><b>HTML:</b> For creating the structure of the contact form.</li><li><b>CSS:</b> Styling is achieved using CSS to ensure a visually appealing and responsive layout.</li><li><b>JavaScript:</b> Functionality, including dark mode toggling and form validation, is implemented using JavaScript.</li></ul>  <br/><h3>Challenges and Solutions:</h3><p>Overcoming challenges in implementing dark mode seamlessly while maintaining form functionality was a key aspect of this project. By carefully coordinating CSS and JavaScript, I ensured a smooth transition between light and dark modes without compromising the user experience.</p><h3>Future Enhancements:</h3><p>The project's current iteration serves as a solid foundation. Future enhancements may involve additional features such as file uploads, CAPTCHA integration, and further customization options for users.</p><p>Explore this Dark Mode Contact Form and witness the convergence of modern design, user-friendly functionality, and backend integration. This project exemplifies my dedication to creating innovative and visually striking web solutions. I am eager continue refining my skills and embracing new challenges in future projects.</p>",
+  },
+  {
+    id: 6,
+    category: {
+      name: "Web Development",
+      featured: false,
+    },
+    image: UniversityWebsite,
+    git: "https://github.com/aqibaliakbar/Responsive-Website-Html-Css",
+    live: "https://aqibaliakbar.github.io/Responsive-Website-Html-Css/index.html",
+    title: "University Website",
+    text: "Tech Stack: Html, CSS",
+    language: [
+      {
+        HTML: "78.2%",
+        CSS: "19.9%",
+        PHP: "1.9%",
+      },
+    ],
+    description:
+      "<p>As a passionate and dedicated web developer, I am excited to showcase my latest project – a comprehensive University Website developed using HTML, CSS, and JavaScript. This multifaceted website comprises five meticulously crafted pages, each designed with user experience and functionality in mind.</p><h3>Home Page:</h3><p>The home page serves as the gateway to the university's online presence. It features an intuitive navigation menu, providing quick access to essential sections of the site. A dynamic hero section welcomes visitors, displaying captivating visuals that capture the essence and spirit of the institution.</p><h3>About Us:</h3><p>The 'About Us' page provides a detailed overview of the university's history, mission, and values. Engaging content is complemented by aesthetically pleasing design elements, creating an immersive narrative for users.</p><h3>Academics:</h3><p>Users can explore the diverse academic programs offered by the university on the 'Academics' page. A responsive layout ensures an optimal viewing experience across various devices.</p><h3>Admissions:</h3><p>The 'Admissions' section guides prospective students through the application process. Interactive forms and clear calls-to-action streamline the user journey, making it easy for applicants to navigate.</p><h3>Contact Us:</h3><p>The 'Contact Us' page features a user-friendly contact form, encouraging seamless communication between the university and its stakeholders. Additional contact details and a map integration provide multiple avenues for getting in touch.</p><h3>Technologies Used:</h3><p>HTML and CSS: The structure and styling of each page were meticulously crafted using HTML and CSS, ensuring a visually appealing and responsive design. JavaScript: JavaScript was employed to enhance the website's interactivity. Dynamic elements and smooth transitions contribute to a polished and modern user experience.</p><h3>Challenges and Achievements:</h3><p>Overcoming the challenge of balancing aesthetics with functionality, I ensured that the website not only looks impressive but also provides a seamless and intuitive user experience. Implementing responsive design principles allowed the site to adapt effortlessly to different screen sizes, guaranteeing accessibility for users on various devices.</p><h3>Future Enhancements:</h3><p>The current iteration of the university website lays a solid foundation. Future enhancements may include the integration of additional features, such as a blog, event calendar, or student portal, to further enrich the user experience.</p><p>This university website project reflects my commitment to delivering impactful and user-centric web solutions. I am enthusiastic about the opportunity to continue refining and expanding my skills in future projects. Explore the website and experience the harmonious blend of design and functionality that defines this digital representation of academic excellence.</p>",
   },
 ];
 

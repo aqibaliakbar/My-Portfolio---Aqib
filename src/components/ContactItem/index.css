@@ -21,6 +21,13 @@
   height: 80px;
   width: 80px;
 }
+
+@media screen and (max-width: 502px) {
+.contact-item .left-content {
+  height: 50px;
+  width: 50px;
+}
+}
 .contact-item .left-content svg {
   font-size: 2rem;
   color: var(--primary-color);

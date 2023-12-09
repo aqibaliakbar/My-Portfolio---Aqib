@@ -1,0 +1,53 @@
+.skills-container{
+  border-top: 1px solid;
+    display: flex;
+  justify-content: space-between;
+
+	
+ 
+}
+
+.skills-title{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	height: 5rem;
+	margin: 0.4rem 0;
+}
+
+.skills-title h6{
+	font-size: 1.2rem;
+	padding: 0;
+	margin-left: 0.6rem;
+}
+
+
+.skills-title p{
+	padding: 0;
+	margin-left: 0.6rem;
+
+}
+
+.skills-title span{
+	font-size: 0.5rem !important;
+}
+
+
+
+.skills-experience{
+  background-color: var(--primary-color);
+  color: var(--sidebar-dark-color);
+  width: 5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+ 
+} 
+
+.skills-experience p{
+	padding: 0;
+}

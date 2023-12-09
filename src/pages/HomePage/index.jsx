@@ -8,7 +8,11 @@ import { motion } from "framer-motion";
 
 
 const HomePage = () => {
-  const titles = ["Web Developer", "Programmer", "Full Stack Developer"]
+  const titles = [
+    "Frontend Developer",
+    "React Developer",
+    "Mern Developer",
+  ];
    const containerVariants = {
      hidden: { opacity: 0 },
      visible: { opacity: 1, transition: { duration: 1 } },

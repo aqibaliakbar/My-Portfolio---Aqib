@@ -1,12 +1,14 @@
 import Resume from "../../components/Resume";
 import ResumeSkills from "../../components/ResumeSkills";
+import ResumeStarSkills from "../../components/ResumeStarSkills";
 
 
 
 const ResumePage = () => {
   return (
     <div className="main-layout">
-      <ResumeSkills />
+      <ResumeStarSkills/>
+      {/* <ResumeSkills /> */}
       <Resume/>
     </div>
   );

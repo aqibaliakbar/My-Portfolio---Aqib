@@ -42,7 +42,7 @@ const filteredData = portfolios.filter(
   return (
     <div className="main-layout">
       
-      <Title title={"Portfolios"} span={"Portfolios"} />
+      <Title title={"Portfolio"} span={"Portfolio"} />
       <motion.div
         className="inner-layout"
         initial="hidden"

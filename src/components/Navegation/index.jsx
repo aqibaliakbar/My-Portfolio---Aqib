@@ -72,7 +72,7 @@ const Navegation = ({ theme }) => {
             onClick={() => handleLinkClick("/portfolios")}
             exact="true"
           >
-            Portfolios
+            Portfolio
           </NavLink>
         </li>
         <li className="nav-item">

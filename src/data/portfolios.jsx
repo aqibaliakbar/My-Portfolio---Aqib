@@ -4,6 +4,7 @@ import TextSpace from "../assets/images/portfolios/Featured/Text-Space.png";
 import BlogCrud from "../assets/images/portfolios/Featured/Blog-Project.png";
 import UniversityWebsite from "../assets/images/portfolios/Web Development/UniWebsite.png";
 import WorkingContactForm from "../assets/images/portfolios/Html Forms/ContactForm-SMTP.png";
+import themedWebsite from "../assets/images/portfolios/Web Development/themedWebsite.png";
 
 
 const portfolios = [
@@ -114,6 +115,28 @@ const portfolios = [
   },
   {
     id: 6,
+    category: {
+      name: "Web Development",
+      featured: false,
+    },
+    image: themedWebsite,
+    git: "https://github.com/aqibaliakbar/Themed-Sushi-Website-HTML-CSSS",
+    live: "https://themed-sushi-website.netlify.app/",
+    title: "Food-Themed Website with AOS Animation",
+    text: "Tech Stack: Html, CSS, JavaScript",
+    language: [
+      {
+        CSS: "61.9%",
+        HTML: "37.7%",
+        JavaScript: "0.4%",
+      },
+    ],
+    description:
+      "<p>Welcome to my delectable creation - a vibrant and visually engaging food-themed website designed to tantalize taste buds and delight users. This project represents the harmonious fusion of HTML, CSS, and JavaScript, with a sprinkle of magic from the AOS (Animate On Scroll) library to bring delightful animations to life.</p><h3>Key Features:</h3><br/><ul><li><b>Immersive Food Experience:</b> Dive into a mouthwatering visual journey, where the website showcases a variety of delicious dishes in an immersive and enticing manner.</li><li><b>AOS Animations:</b> Elevate user engagement with seamless animations powered by the AOS library. Each scroll reveals captivating transitions, creating a dynamic and lively browsing experience.</li><li><b>Responsive Design:</b> The website is crafted with a responsive design, ensuring a delightful user experience across devices, from desktops to tablets and mobile phones.</li><li><b>Interactive Elements:</b> Engage users with interactive elements such as navigational menus, hover effects, and call-to-action buttons, creating an intuitive and user-friendly interface.</li></ul><br/><h3>AOS Animation Implementation:</h3><p>The AOS library injects life into the website with on-scroll animations. From subtle fades to eye-catching rotations, AOS enhances the visual storytelling, creating an immersive experience that captures the essence of the culinary world.</p><h3>Technologies Used:</h3><p>This project leverages a powerful trio of technologies:</p><u><li><b>HTML:</b> Building the foundation of the website with structured and semantic markup.</li><li><b>CSS:</b> Styling elements to create a visually appealing and cohesive design.</li><li><b>JavaScript:</b> Enhancing interactivity and implementing AOS animations to bring dynamic movements to the webpage.</li></u<h3>Challenges and Solutions:</h3><>Navigating the culinary landscape while ensuring smooth AOS animations posed an exciting challenge. Through meticulous coordination of AOS configurations and CSS styles, I achieved a perfect blend of animation and aesthetics, delivering a delightful visual feast for users.</<h3>Future Enhancements:</h3><p>This food-themed website is just the beginning. Future enhancements may involve expanding the menu, integrating e-commerce functionality, and incorporating user-generated content to foster a vibrant community of food enthusiasts.</p><p>Indulge your senses and explore this culinary journey through my food-themed website. The combination of AOS animations and thoughtful design exemplifies my commitment to creating immersive and visually stunning web experiences. I am eager to continue exploring new avenues and flavors in the world of web development.</p>",
+  },
+
+  {
+    id: 7,
     category: {
       name: "Web Development",
       featured: false,

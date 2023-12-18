@@ -4,13 +4,13 @@
   grid-gap: 2rem;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1300px) {
   .portfolio-menu {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 1070px) {
   .portfolio-menu {
     grid-template-columns: repeat(1, 1fr);
   }

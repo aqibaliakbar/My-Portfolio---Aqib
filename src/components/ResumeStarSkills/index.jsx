@@ -13,19 +13,19 @@ const ResumeStarSkills = () => {
             <SmallTitle className="smallTitle" title={"Front-End"} />
           </div>
           <ResumeStar
-            title={"HTML5"}
+            title={"Html5"}
             filledStars={4}
             experience={2}
             text={"Years"}
           />
           <ResumeStar
-            title={"CSS3"}
+            title={"Css3"}
             filledStars={4}
             experience={2}
             text={"Years"}
           />
           <ResumeStar
-            title={"JAVASCRIPT"}
+            title={"Javascript"}
             filledStars={3}
             experience={2}
             text={"Years"}

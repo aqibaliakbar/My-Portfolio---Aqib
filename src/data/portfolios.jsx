@@ -6,7 +6,7 @@ import UniversityWebsite from "../assets/images/portfolios/Web Development/UniWe
 import WorkingContactForm from "../assets/images/portfolios/Html Forms/ContactForm-SMTP.png";
 import themedWebsite from "../assets/images/portfolios/Web Development/themedWebsite.png";
 import ReactDataWebsite from "../assets/images/portfolios/Web Development/ReactDataWebsite.png";
-
+import ReactFitnessWebsite from "../assets/images/portfolios/Web Development/ReactFitness.png";
 
 const portfolios = [
   {
@@ -93,8 +93,30 @@ const portfolios = [
     description:
       "<p>Welcome to my Portfolio Blog Project, where creativity meets functionality! This project is a showcase of my skills in web development, featuring a robust Content Management System (CMS) built with API integration, asynchronous programming, and the power of Redux.js.</p> <h2>Key Features:</h2> <p><b>CRUD Operations:</b> Create: Users can easily create new blog posts with a user-friendly interface. The system ensures a smooth and intuitive post creation process.Read: Explore a dynamic and responsive blog layout that fetches and displays posts seamlessly from a third-party fake API, providing a realistic data environment for users to engage with. Update: Edit and refine your blog posts effortlessly. The project incorporates a comprehensive update mechanism that allows authors to modify content, timestamps, and emojis as needed.Delete: Keep your blog organized by removing outdated or unnecessary posts with the secure and user-friendly delete functionality. </p> <p> <b>Async Operations:</b> Experience a seamless and responsive interface through the implementation of asynchronous programming. The blog project utilizes async techniques to enhance performance, ensuring a smooth user experience without unnecessary delays. </p> <p> <b>Redux.js Power:</b> Harnessing the power of Redux.js, this project manages state efficiently, providing a scalable and maintainable solution for handling the application's complex data flow. Redux ensures a single source of truth for the application state, simplifying debugging and development. </p> <p> <b>Timestamps and Emojis:</b> HEach blog post is enriched with timestamps, capturing the moment of creation or modification. Additionally, inject personality into your posts with a wide range of emojis, allowing authors to express themselves uniquely. </p> </br> <p> Whether you're a visitor exploring engaging content or an aspiring blogger, this Portfolio Blog Project showcases my commitment to creating dynamic and feature-rich web applications. Dive in, explore, and witness the synergy of API integration, asynchronous programming, and the organizational prowess of Redux.js in action!</p>",
   },
+
   {
     id: 5,
+    category: {
+      name: "Web Development",
+      featured: false,
+    },
+    image: ReactFitnessWebsite,
+    git: "https://github.com/aqibaliakbar/React-Fitness-Website",
+    live: "https://aqfitness.netlify.app/",
+    title: "Fitness Website Using ReactJs & CSS",
+    text: "Tech Stack: React, CSS",
+    language: [
+      {
+        JavaScript: "67.7%",
+        CSS: "31.3%",
+        HTML: "1.0%",
+      },
+    ],
+    description:
+      "<p>Step into the world of fitness with my latest project – a dynamic Fitness Website crafted with React.js. This venture not only demonstrates my proficiency in React.js but also showcases the power of reusable components for a modular and scalable design.</p><h3>Key Features:</h3><br/> <ul><li><b>React.js Reusable Components:</b> Harnessing the strength of React.js, the website is built with reusable components, promoting code efficiency, maintainability, and scalability.</li><li><b>Responsive Design:</b> The website adapts seamlessly to different devices, providing a consistent and enjoyable experience on desktops, tablets, and mobile devices.</li></ul><br/> <h3>Reusable React Components:</h3><p>The core strength of this project lies in the efficient use of reusable React components. From workout cards to interactive progress trackers, each component is designed to be modular, making it easy to maintain and extend the functionality of the website.</p><h3>Technologies Used:</h3><p>This fitness website is a testament to the successful integration of modern technologies:</p><ul><li><b>React.js:</b> Powering the frontend with reusable components, ensuring a modular and efficient codebase.</li><li><b>CSS:</b> Styling the components with CSS to create a visually appealing and cohesive design.</li></ul><br/> <h3>Challenges and Solutions:</h3><p>Building a fitness website presented challenges in terms of designing interactive components and ensuring seamless user interaction. The use of reusable React components not only addressed these challenges but also streamlined the development process, making it easier to iterate and enhance functionality.</p><p>Embark on a fitness journey with this React.js-powered website, where the fusion of interactive components and reusable design principles reflects my dedication to creating user-centric and scalable web solutions. I am excited about the opportunity to continue refining my skills and exploring new avenues in future projects.</p>",
+  },
+  {
+    id: 6,
     category: {
       name: "Html Forms",
       featured: false,
@@ -116,7 +138,7 @@ const portfolios = [
   },
 
   {
-    id: 6,
+    id: 7,
     category: {
       name: "Web Development",
       featured: false,
@@ -138,7 +160,7 @@ const portfolios = [
   },
 
   {
-    id: 7,
+    id: 8,
     category: {
       name: "Web Development",
       featured: false,
@@ -160,7 +182,7 @@ const portfolios = [
   },
 
   {
-    id: 8,
+    id: 9,
     category: {
       name: "Web Development",
       featured: false,

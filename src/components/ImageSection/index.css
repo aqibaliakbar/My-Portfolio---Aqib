@@ -1,6 +1,7 @@
 .image-section {
   margin-top: 5rem;
   display: flex;
+  
 }
 
 .left-content {
@@ -16,7 +17,7 @@
 }
 
 .image-container img {
-  height: 600px;
+  height: 500px;
   width: auto;
   object-fit: cover;
   border-top: 8px solid var(--border-color);
@@ -74,13 +75,14 @@
 
 @media screen and (max-width: 1500px){
     .image-container img {
-   height: 450px;
+   height: 420px;
   }
+
 }
 
 @media screen and (max-width: 1300px){
     .image-container img {
-   height: 400px;
+   height: 380px;
   }
 }
 

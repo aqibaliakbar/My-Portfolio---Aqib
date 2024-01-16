@@ -98,7 +98,7 @@ const Navegation = ({ theme }) => {
       </ul>
       <footer className="footer">
         <p>
-          @2023 <b>AQ-Developer</b>
+          @2024 <b>AQ-Developer</b>
         </p>
       </footer>
     </nav>

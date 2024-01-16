@@ -68,7 +68,7 @@ const Navegation = ({ theme }) => {
         <li className="nav-item">
           <NavLink
             to="/portfolios"
-            className={activeLink === "/portfolios" ? "active" : ""}
+            className={activeLink === "/portfolio" ? "active" : ""}
             onClick={() => handleLinkClick("/portfolio")}
             exact="true"
           >

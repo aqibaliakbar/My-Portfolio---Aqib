@@ -69,7 +69,7 @@ const Navegation = ({ theme }) => {
           <NavLink
             to="/portfolios"
             className={activeLink === "/portfolios" ? "active" : ""}
-            onClick={() => handleLinkClick("/portfolios")}
+            onClick={() => handleLinkClick("/portfolio")}
             exact="true"
           >
             Portfolio

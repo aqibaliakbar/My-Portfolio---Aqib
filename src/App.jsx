@@ -87,7 +87,7 @@ function App() {
           <Route path="/" exact element={<HomePage />} />
           <Route path="/about" exact element={<AboutPage theme={theme} />} />
           <Route path="/resume" exact element={<ResumePage />} />
-          <Route path="/portfolios">
+          <Route path="/portfolio">
             <Route index element={<PortfoliosPage />} />
             <Route path=":portId" element={<PortfolioDetails />} />
           </Route>

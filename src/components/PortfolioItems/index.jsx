@@ -27,7 +27,7 @@ const PortfolioItems = ({ portfolioItem }) => {
                   </li>
                 </ul>
               </div>
-              <Link to={`/portfolios/${item.id}`} className="link-title">
+              <Link to={`/portfolio/${item.id}`} className="link-title">
                 <h6>{item.title}</h6>
               </Link>
               <p>{item.text}</p>

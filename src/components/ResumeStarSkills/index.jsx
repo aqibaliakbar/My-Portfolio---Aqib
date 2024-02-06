@@ -37,10 +37,16 @@ const ResumeStarSkills = () => {
             text={"Years"}
           />
           <ResumeStar
-            title={"Redux"}
-            filledStars={3}
+            title={"Next JS"}
+            filledStars={2}
+            // experience={1}
+            text={"Basic"}
+          />
+          <ResumeStar
+            title={"WordPress"}
+            filledStars={4}
             experience={1}
-            text={"Years"}
+            text={"Year"}
           />
         </div>
         <div>
@@ -52,19 +58,19 @@ const ResumeStarSkills = () => {
             title={"Node Js"}
             filledStars={3}
             experience={1}
-            text={"Years"}
+            text={"Year"}
           />
           <ResumeStar
             title={"Express Js"}
             filledStars={3}
             experience={1}
-            text={"Years"}
+            text={"Year"}
           />
           <ResumeStar
             title={"MongoDB"}
             filledStars={3}
             experience={1}
-            text={"Years"}
+            text={"Year"}
           />
           <ResumeStar
             title={"Github"}
@@ -84,8 +90,14 @@ const ResumeStarSkills = () => {
             // text={"Not Used"}
           />
           <ResumeStar
-            title={"Next JS"}
-            subText={"The React Framework for the Web"}
+            title={"PHP"}
+            subText={"Server-side scripting language for web"}
+            experience={"N/A"}
+            // text={"Not Used"}
+          />
+          <ResumeStar
+            title={"SQL"}
+            subText={"Structured Query Language for databases"}
             experience={"N/A"}
             // text={"Not Used"}
           />

@@ -2,7 +2,7 @@ import PrimaryButton from '../PrimaryButton';
 import './index.css'
 import resumeImgDark from '../../assets/images/resume1.png'
 import resumeImgLight from '../../assets/images/resumeLight.png'
-import resume from "../../assets/Resume - Aqib Ali Akbar.pdf";
+import resume from "../../assets/Resume-Aqib.pdf";
 import { motion } from "framer-motion";
 
 const ImageSection = ({theme}) => {
